@@ -1,0 +1,10 @@
+<div class="puremotion_container">
+	<object id="flashplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{{ width }}" height="{{ height }}">
+		<param name="movie" value="{{ playerUrl }}">
+		<param name="allowFullScreen" value="true">
+		<param name="allowScriptAccess" value="always">
+		<param name="wmode" value="opaque">
+		<param name="FlashVars" value="{{{ flashvars }}}">
+		<embed name="flashplayer" src="{{ playerUrl }}" FlashVars="{{{ flashvars }}}" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" wmode="opaque" width="{{ width }}" height="{{ height }}">
+	</object>
+</div>

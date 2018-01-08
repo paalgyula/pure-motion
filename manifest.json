@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "loader.js" ],
+      "matches": [ "file:///*", "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "The video ad remover",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2tDp7mtQN0YIIyw8cyQ6epp53+v53vJMruaP2EVXAHsqZ51ZT1laYatRIIb3rduc7xNQ3+rvhxNHJT0EgtHt0O/tQjOufsmrVIekQY9fDYKb8OZGojwc+v6My/dTuxU0silFaWXvOuATWq7LzYAPXRBUlUZoJa5btk40JtqVadGSzeIVyg1GTmvUp/wBkU34cEhvOgrUyVYlARjQmFbI6nI10TWzhX7A0VjrmraLFIgdNKTUXduAoAPbmC6tte6o98aMkt822Jk9z/UgZjEiZSkbidCU53alhLic33af0QJjnVtU1SFgCl/wq5xRNcpJdpQ9yqoebdZTowWuZUFnQIDAQAB",
+   "manifest_version": 2,
+   "name": "Pure motion",
+   "permissions": [ "activeTab", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*", "file://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.168",
+   "web_accessible_resources": [ "img/*", "templates/*", "plyr/*", "video.js/*", "videojs/*" ]
+}

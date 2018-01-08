@@ -1,0 +1,57 @@
+<video id="example-video" width="{{ width }}" height="{{ height }}" class="video-js vjs-default-skin" controls>
+	<source src="{{ file }}" type="application/x-mpegURL">
+	{{{ subtitleTags }}}
+</video>
+
+<link href="{{ videojspath }}/video-js.css" rel="stylesheet">
+<!--
+<div class="puremotion_container" style="{{ css }}">
+	<div class="puremotion_overlay"></div>
+	<div class="puremotion_overlay_subtitles"></div>
+	<video id="video_tag" width="{{ width }}" height="{{ height }}" poster="data:image/gif,AAAA" controls>
+		<source id="source_vid" src="{{ file }}" type="video/mp4">
+		{{{ subtitleTags }}}
+		Your browser does not support the video tag.
+	</video>
+</div>
+<style>
+	.puremotion_container {
+		width: {{ width }}px;
+		height: {{ height }}px;
+		position: relative;
+	}
+
+	video.loading {
+		background: transparent url('{{ imagepath }}/ajax-loader.gif') center center no-repeat;
+	}
+
+	.puremotion_overlay {
+		background-repeat: no-repeat;
+		height: 100px;
+		position: absolute;
+		width: 100px;
+		z-index: 600;
+		border-radius: 50%;
+		top:20%;
+		left:0;
+		right:0;
+		margin:auto;
+	}
+
+	.puremotion_overlay_subtitles {
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: 600;
+		background-color: rgba(0, 0, 0, 0.5);
+		right:10%;
+		padding: 20px;
+		text-align: left;
+		display: none;
+	}
+
+	.play {
+		background-image: url('{{ imagepath }}/play.png');
+		background-position: center center;
+	}
+</style>
+-->

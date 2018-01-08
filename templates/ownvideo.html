@@ -1,0 +1,68 @@
+<div class="puremotion_container" style="{{ css }}">
+	<div class="puremotion_overlay"></div>
+	<div class="puremotion_overlay_subtitles"></div>
+	<video id="video_tag" poster="data:image/gif,AAAA" controls>
+		<source id="source_vid" src="{{ file }}" type="video/mp4">
+		{{{ subtitleTags }}}
+		Your browser does not support the video tag.
+	</video>
+	<div id="puremotion_controls">
+		<div class="btnPlay btn" title="Play/Pause video" id="play-pause"><span class="icon-play"></span></div>
+		<progress value="0" max="100"></progress>
+		<div class="icon-sound"></div>
+		<div id="fullscreen" class="icon-fullscreen"></div>
+	</div>
+</div>
+<style>
+	.puremotion_container {
+		width: {{ width }}px;
+		height: {{ height }}px;
+		position: relative;
+	}
+
+	video {
+		width: 100%;
+		height: 100%;
+	}
+
+	video.loading {
+		background: transparent url('{{ imagepath }}/ajax-loader.gif') center center no-repeat;
+	}
+
+	.puremotion_overlay {
+		background-repeat: no-repeat;
+		height: 100px;
+		position: absolute;
+		width: 100px;
+		z-index: 600;
+		border-radius: 50%;
+		top:20%;
+		left:0;
+		right:0;
+		margin:auto;
+	}
+
+	.puremotion_overlay_subtitles {
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: 600;
+		background-color: rgba(0, 0, 0, 0.5);
+		right:10%;
+		padding: 20px;
+		text-align: left;
+		display: none;
+	}
+
+	.play {
+		background-image: url('{{ imagepath }}/play.png');
+		background-position: center center;
+	}
+
+	#puremotion_controls {
+		width: {{ width }}px;
+		position: relative;
+		top: -40;
+		z-index: 600;
+	}
+
+</style>
